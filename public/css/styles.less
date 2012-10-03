@@ -9,3 +9,64 @@
 //This is for a fluid layout
 @total-width: 100%;
 
+/* Colors */
+@background-color: #228B22;
+
+body {
+  background-color: @background-color;
+  .gradient(#79B743, #79B743,#58B28D);
+  font-family: helvetica;
+}
+
+#header {
+  #logo {
+    float: left;
+  }
+  #pledge-stats {
+    color: white;
+    position: absolute;
+    right: 10%;
+    width: 30%;
+    top: 10px;
+  }
+  #banner-title {
+    position: absolute;
+    height: 65px;
+    width: 220px;
+    left: -5%;
+    top: -20px;
+    padding-top: 30px;
+    text-align: center;
+    :nth-child(1) {
+      color: green;
+      display: inline;
+    }
+    :nth-child(2) {
+      display: inline;
+    }
+    :nth-child(3) {
+      font-size: 20px;
+    }
+    font-size: 25px;
+    background: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-left: 20%;
+    -webkit-transform: rotate(-6deg);
+  }
+}
+
+#main {
+  margin-top: 130px;
+  margin-left: 10%;
+  background: white;
+  width: 80%;
+  height: 100%;
+  #tabs {
+    background: grey;
+    height: 70px;
+  }
+  #main-content {
+    padding: 20px;
+  }
+}

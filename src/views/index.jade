@@ -11,7 +11,7 @@ head
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     //meta(name='viewport', content='width=640, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no')
     meta(name='apple-mobile-web-app-capable', content='yes')
-    title Varun Singh
+    title Meatless Mondays
 
     if isDevelopment
         link(rel="stylesheet/less", type='text/css', href="/css/styles.less")
@@ -25,11 +25,30 @@ head
         script(type='text/javascript', src='/js/libs/require.js')
 
 body
-#isDevelopment(style='display: none;')  #{isDevelopment}
-#animation-wrapper
-  #header
-  #tabs
-  #main-page-wrapper
+  #isDevelopment(style='display: none;')  #{isDevelopment}
+  #animation-wrapper
+    #header
+      #logo
+        //img(src="/assets/images/logomedium.png")
+      #banner-title
+        div Meatless
+        div Mondays
+        div Brown
+      #pledge-stats With 484 signers so far, we've added 69 vegetarians to campus and reduced Brown's carbon footprint by 99.312 kg of CO2 per week
+    #main
+      #tabs
+      #main-content
+        div
+          p
+            |The goal of Brown Meatless Mondays is to reduce campus wide meat consumption. By doing so, we lower our carbon footprint, increase the general health of our student body, and show that we are a socially responsible community.
+          p
+            |But let’s face it: meat is tasty, and giving up meat is quite a commitment. It’s not for everyone, and we know that. So what can you do if you recognize the benefits of vegetarianism but just can’t give up Chicken Finger Fridays?
+          p
+            |Try out Meatless Monday!
+          p
+            |It’s not that hard to have three meatless meals a week, and it adds up: if seven people participate in Meatless Mondays, it’s like replacing one meat-eating student with a vegetarian one. When more students sign the pledge, the result is a reduction in meat consumption as if we were increasing the proportion of vegetarians on campus—without anyone having to commit to a strict vegetarian diet.
+          p
+            |Help us make Brown a greener, healthier, socially responsible campus. Take the pledge today!
 
 if !isDevelopment
     script(type='text/javascript', src='/release/app.js')
